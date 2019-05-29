@@ -1,0 +1,10 @@
+module CorbaChat{
+	interface CorbaServer{
+		void create(in string room, in string user);
+		string list();
+		string join(in string room, in string user);
+		string leave(in string room, in string user);
+		string writeMessage(in string msg, in string room, in string user);
+		void newUser(in string name);
+	};
+};
